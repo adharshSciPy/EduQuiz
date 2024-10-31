@@ -1,0 +1,52 @@
+.main{
+    background: linear-gradient(to right, #82A9E5, #6095DE);
+    
+}
+.lft{
+    margin-left: 45%;
+}
+@media (max-width: 576px) {
+    .lft{
+        margin-left: 0;
+    }
+}
+.filter-container{
+    padding: 10px;
+    
+    display: flex;
+    justify-content: flex-end;
+
+}
+.report-dropdown{
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    margin-bottom: 6px;
+
+    
+}
+.timerMain{
+    width: 105px;
+    height: 70px;
+    border-radius: 10px;
+    background: linear-gradient(to right, #82A9E5, #6095DE);
+    stroke:black;
+    position: absolute;
+    right: 15px;
+    top:100px ;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+align-items: center;
+
+
+}
+
+.timerHead{
+font-size: larger;
+font-weight: 800;
+}
+.timerRed{
+    /* border: 2px solid rgb(250, 81, 81); */
+    color: red;
+}

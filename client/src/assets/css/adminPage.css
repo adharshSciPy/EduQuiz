@@ -1,0 +1,24 @@
+/* General Styles */
+* {
+  box-sizing: border-box;
+}
+
+/* Main Background */
+.main {
+  background: linear-gradient(to right, #82a9e5, #6095de);
+  min-height: 100vh;
+  /* overflow: scroll; */
+}
+/* footer */
+.footer {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 8px;
+  textalign: center;
+  color: white;
+  fontsize: 14px;
+  width: 100vw;
+  bottom: 0;
+  position: fixed;
+}
+
+/* Navbar Styling */

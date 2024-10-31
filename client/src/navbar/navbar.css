@@ -1,0 +1,94 @@
+nav {
+    background-color: #76a1e0; /* Navbar background color */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    padding: 1rem;
+    z-index: 1000;
+  }
+  
+  /* Title Link */
+  nav .title {
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Navigation Links */
+  nav ul {
+    display: flex;
+    gap: 1rem; /* Adjust spacing between links */
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    list-style: none;
+  }
+  
+  nav ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    color: white;
+  }
+  
+  nav ul li a:not(.active):hover {
+    background-color: #d4caca; /* Hover background color */
+  }
+  
+  /* Hamburger Menu Styling */
+  nav .menubar {
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly; 
+    width: 1.55rem;
+    height: 1.8rem;
+    cursor: pointer;
+    
+  }
+  
+  nav .menubar span {
+    height: 0.2rem;
+    width: 100%;
+    background-color: #f3eaea;
+    border-radius: 0.2rem;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 480px) {
+    nav {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    nav ul {
+      display: none; /* Hide links by default on small screens */
+      flex-direction: column;
+      width: 100%;
+      background-color: #76a1e0;
+      padding: 0;
+      margin: 0;
+    }
+  
+    nav ul.open {
+      display: flex; /* Show links when menu is open */
+    }
+  
+    nav ul li {
+      width: 100%;
+      text-align: center;
+      margin: 0.2rem 0;
+    }
+  
+    nav .menubar {
+      display: flex; /* Show hamburger menu on small screens */
+      position: absolute;
+      right: 1rem; /* Align hamburger menu to the right */
+      top: 1rem; /* Adjust position from the top */
+    }
+  }
+  

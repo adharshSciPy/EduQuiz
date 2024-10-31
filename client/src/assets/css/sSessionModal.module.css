@@ -1,0 +1,21 @@
+/* sessionModal.module.css */
+.cancelButton {
+    background-color: #f44336; /* Red for cancel */
+    color: white;
+    border: none;
+    margin-right: 10px;
+  }
+  
+  .okButton {
+    background-color: #4caf50; /* Green for OK */
+    color: white;
+    border: none;
+  }
+  
+  /* Remove hover effect */
+  .okButton:hover, .cancelButton:hover {
+    background-color: inherit; /* Keeps the button's color static */
+    cursor: default; /* Removes pointer style if you want */
+    opacity: 1; /* No change in opacity */
+  }
+  

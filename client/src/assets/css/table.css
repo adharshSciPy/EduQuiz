@@ -1,0 +1,97 @@
+/* General styling for the table container */
+.table-container {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1000px;
+  }
+  
+  /* Table styling */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  /* Table header styling */
+  table thead {
+    background-color: #6095DE;
+    color: white;
+  }
+  
+  table thead th {
+    padding: 12px;
+    text-align: left;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  /* Table body styling */
+  table tbody tr {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  table tbody tr:nth-child(even) {
+    background-color: #e9ecef; /* Alternate row color */
+  }
+  
+  table tbody td {
+    padding: 10px;
+    text-align: left;
+    font-size: 14px;
+  }
+  
+  /* Hover effect on table rows */
+  table tbody tr:hover {
+    background-color: #dee2e6;
+  }
+  .download-button {
+    background-color:#6095DE; 
+    border: none; /* No border */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin-left: 10px; /* Space between dropdown and button */
+    font-size:20px; /* Size of the icon */
+    color:#e9ecf1; /* Icon color */
+    transition: color 0.3s; /* Transition for hover effect */
+}
+
+.download-button:hover {
+    background-color: #f8f9fa;
+    color: #6095DE;
+}
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .table-container {
+      padding: 10px;
+    }
+    
+    table thead {
+      display: none; /* Hide table header on small screens */
+    }
+    
+    table tbody tr {
+      display: block;
+      margin-bottom: 20px;
+    }
+  
+    table tbody td {
+      display: block;
+      text-align: left;
+      padding: 10px;
+      position: relative;
+      padding-left: 50%;
+      border-bottom: 1px solid #ddd;
+    }
+    
+    table tbody td:before {
+      content: attr(data-label);
+      position: absolute;
+      left: 10px;
+      width: 45%;
+      text-align: left;
+      font-weight: bold;
+      color: #333;
+    }
+  }
+  
