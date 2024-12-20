@@ -33,7 +33,7 @@ const Quiz = () => {
   // Fetch questions with pagination
   const fetchQuestions = async (page) => {
     try {
-      const response = await axios.get('http://localhost:8000/api/v1/user/getQuestions', {
+      const response = await axios.get('http://13.203.138.3:8000/api/v1/user/getQuestions', {
         params: {
           page: page,
           limit: 500, // Fetch all questions (or adjust limit if needed)
@@ -118,7 +118,7 @@ const Quiz = () => {
         selectedOption: answer.selectedOption || 'skipped',
       }));
 
-      const response = await axios.patch(`http://localhost:8000/api/v1/user/quizSubmit/${loggedInUserId}`, {
+      const response = await axios.patch(`http://13.203.138.3:8000/api/v1/user/quizSubmit/${loggedInUserId}`, {
         answers: processedAnswers,
         disqualified: isDisqualified,
       });

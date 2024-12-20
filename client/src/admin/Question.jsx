@@ -46,7 +46,7 @@ const Question = () => {
         option4: form.option4,
         correctAns: form.correctAns
       }
-      const response = axios.post('http://localhost:8000/api/v1/question/createquestions', payload)
+      const response = axios.post('http://13.203.138.3:8000/api/v1/question/createquestions', payload)
       if (response) {
         console.log("payload", payload)
         notifySuccess()

@@ -11,7 +11,7 @@ function AdminTable() {
 
     const getQuestions = async () => {
         try {
-            const response = await axios.get('http://localhost:8000/api/v1/question/getquestions')
+            const response = await axios.get('http://13.203.138.3:8000/api/v1/question/getquestions')
             console.log("admintable", response.data.data);
             setQuestions(response.data.data);
         } catch (error) {
@@ -25,7 +25,7 @@ function AdminTable() {
 
     const deleteQuestions = async (id) => {
         try {
-            const response = await axios.delete(`http://localhost:8000/api/v1/question/deletequestions/${id}`);
+            const response = await axios.delete(`http://13.203.138.3:8000/api/v1/question/deletequestions/${id}`);
             console.log("deleted", response)
             getQuestions();
         }

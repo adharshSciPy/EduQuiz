@@ -12,7 +12,7 @@ function ReportTable() {
 
   const fetchData = async () => {
     try {
-      const response = await axios.get(`http://localhost:8000/api/v1/user/getUsers`);
+      const response = await axios.get(`http://13.203.138.3:8000/api/v1/user/getUsers`);
       setTable(response.data.data);
       setFilteredTable(response.data.data); // Set filteredTable initially to all data
     } catch (error) {
